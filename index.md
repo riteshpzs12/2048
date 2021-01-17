@@ -1,6 +1,6 @@
 ## 2048
 
-[2048](https://play.google.com/store/apps/details?id=com.androbaby.original2048&hl=en_IN&gl=US) is a singleplayer game which emerged as one of the most addictive games of its time. It is simple but entertaining basic math based game which prompted me to try and code it out. I implemented the basic logic and made a console game where user can play by giving the input which direction he wants to swipe. Its an exact working solution of that game just the UI and User control is inferior as it had to run on terminal and I had no knowledge of APP UI. Now lets see what it is.
+[2048](https://play.google.com/store/apps/details?id=com.androbaby.original2048&hl=en_IN&gl=US) is a single player game which emerged as one of the most addictive games of it's time. It is simple but entertaining basic math based game which prompted me to try and code it out. I implemented the basic logic and made a console game where user can play by giving the input which direction he wants to swipe. Its an exact working solution of that game just the UI and User control is inferior as it had to run on terminal and I had no knowledge of APP UI. Now lets see what it is.
 
 ### Instructions
 
