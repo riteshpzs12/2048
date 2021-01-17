@@ -16,7 +16,7 @@ This game is written in C. I wish to make this as an App with a few UX tweaks to
 
 1. Its a single player game with square grid play ground (typically `4*4`) with initial state ther are 3 numbers (either 2 or 4) are present in 3 random location.
 
-![Screenshot 1](https://github.com/riteshpzs12/ChainReaction/blob/main/images/chainreaction1.png) ![Screenshot 2](https://github.com/riteshpzs12/ChainReaction/blob/main/images/chainreaction2.png) 
+![Screenshot 1](2048_1.png) ![Screenshot 2](2048_2.png) 
 
 2. User swipes in one direction (right, left, up or down) making all the cells with numbers move towards that direction based on two rules (As mine is console based it takes integer input defining each direction).
   A. The empty cells falling in the movement path is skipped.
