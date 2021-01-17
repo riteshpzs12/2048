@@ -31,6 +31,7 @@ This game is written in C. I wish to make this as an App with a few UX tweaks to
 ### Future plan
 
 1. I hope to update this as a xamarin app and update the UX
-2. Add dynamic grid side
+2. Add dynamic grid size
 3. Add the undo feature
 
+Feel free to suggest any imporvemet or new feature, I will try to add.
