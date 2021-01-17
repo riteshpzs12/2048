@@ -1,37 +1,36 @@
-## Welcome to GitHub Pages
+## 2048
 
-You can use the [editor on GitHub](https://github.com/riteshpzs12/2048/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+[2048](https://play.google.com/store/apps/details?id=com.androbaby.original2048&hl=en_IN&gl=US) is a singleplayer game which emerged as one of the most addictive games of its time. It is simple but entertaining basic math based game which prompted me to try and code it out. I implemented the basic logic and made a console game where user can play by giving the input which direction he wants to swipe. Its an exact working solution of that game just the UI and User control is inferior as it had to run on terminal and I had no knowledge of APP UI. Now lets see what it is.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+### Instructions
 
-### Markdown
+Compile and run using this command
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+```bash
+ $ gcc 2048.c
+ $ ./a.out
+ ```
+This game is written in C. I wish to make this as an App with a few UX tweaks to be able to play with dynamic grid size.
 
-```markdown
-Syntax highlighted code block
+### How to Play
 
-# Header 1
-## Header 2
-### Header 3
+1. Its a single player game with square grid play ground (typically `4*4`) with initial state ther are 3 numbers (either 2 or 4) are present in 3 random location.
 
-- Bulleted
-- List
+![Screenshot 1](https://github.com/riteshpzs12/ChainReaction/blob/main/images/chainreaction1.png) ![Screenshot 2](https://github.com/riteshpzs12/ChainReaction/blob/main/images/chainreaction2.png) 
 
-1. Numbered
-2. List
+2. User swipes in one direction (right, left, up or down) making all the cells with numbers move towards that direction based on two rules (As mine is console based it takes integer input defining each direction).
+  A. The empty cells falling in the movement path is skipped.
+  B. After applying rule A the adjacent same valued cells (based on the direction i.e. if two 2s are side by side horizontally and user selects left or right swipe then they are added and occupies left or right block respectively) are merged. The value of the cell is doubled.
+  
+3. In each swipe a new number (either 2 or 4) is added to the board in a random location empty cell.
 
-**Bold** and _Italic_ and `Code` text
+4. When there is no empty space left to add new block after a swipe then its game over
 
-[Link](url) and ![Image](src)
-```
+5. Goal is to have the highest possible value in any one cell. When any cell reaches 2048 value then player wins the game.
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+### Future plan
 
-### Jekyll Themes
+1. I hope to update this as a xamarin app and update the UX
+2. Add dynamic grid side
+3. Add the undo feature
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/riteshpzs12/2048/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
